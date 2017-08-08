@@ -66,6 +66,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.ProjectDetailsProjectNameTextBox = new System.Windows.Forms.TextBox();
             this.companyDetailsTabPage = new System.Windows.Forms.TabPage();
+            this.CompanyDetailsEmployeeTextBox = new System.Windows.Forms.TextBox();
+            this.CompanyDetailsEmployeeId = new System.Windows.Forms.Label();
             this.CompanyDetailsClearButton = new System.Windows.Forms.Button();
             this.companyDetailsSaveButton = new System.Windows.Forms.Button();
             this.CompanyDetailsWebsiteTextBox = new System.Windows.Forms.TextBox();
@@ -78,9 +80,7 @@
             this.CompanyDetailsEmployerNameLabel = new System.Windows.Forms.Label();
             this.technicalDetailsTabPage = new System.Windows.Forms.TabPage();
             this.technicalDetailsSaveButton = new System.Windows.Forms.Button();
-            this.ormTechnologiesTextBox = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.databasesTextBox = new System.Windows.Forms.TextBox();
+            this.databaseTextBox = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.programmingLanguagesTextBox = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -112,8 +112,10 @@
             this.label18 = new System.Windows.Forms.Label();
             this.ProjectDetailsGridView = new System.Windows.Forms.DataGridView();
             this.EmployeeDetailGridView = new System.Windows.Forms.DataGridView();
-            this.CompanyDetailsEmployeeId = new System.Windows.Forms.Label();
-            this.CompanyDetailsEmployeeTextBox = new System.Windows.Forms.TextBox();
+            this.TechnicalDetailsClearButton = new System.Windows.Forms.Button();
+            this.EducationDetailsClearButton = new System.Windows.Forms.Button();
+            this.TechnicalDetailsEmployeeIdLabel = new System.Windows.Forms.Label();
+            this.TechnicalDetailEmployeeIdTextBox = new System.Windows.Forms.TextBox();
             this.DashBoard.SuspendLayout();
             this.employeeDetailTabPage.SuspendLayout();
             this.projectDetailsTabPage.SuspendLayout();
@@ -318,7 +320,7 @@
             // address2Label
             // 
             this.address2Label.AutoSize = true;
-            this.address2Label.Location = new System.Drawing.Point(511, 177);
+            this.address2Label.Location = new System.Drawing.Point(511, 170);
             this.address2Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.address2Label.Name = "address2Label";
             this.address2Label.Size = new System.Drawing.Size(51, 13);
@@ -427,6 +429,7 @@
             this.ProjectDetailsClearButton.TabIndex = 9;
             this.ProjectDetailsClearButton.Text = "Clear";
             this.ProjectDetailsClearButton.UseVisualStyleBackColor = true;
+            this.ProjectDetailsClearButton.Click += new System.EventHandler(this.ProjectDetailsClearButton_Click);
             // 
             // projectDetailsSaveButton
             // 
@@ -533,9 +536,25 @@
             this.companyDetailsTabPage.TabIndex = 2;
             this.companyDetailsTabPage.Text = "Company Details";
             // 
+            // CompanyDetailsEmployeeTextBox
+            // 
+            this.CompanyDetailsEmployeeTextBox.Location = new System.Drawing.Point(268, 220);
+            this.CompanyDetailsEmployeeTextBox.Name = "CompanyDetailsEmployeeTextBox";
+            this.CompanyDetailsEmployeeTextBox.Size = new System.Drawing.Size(261, 20);
+            this.CompanyDetailsEmployeeTextBox.TabIndex = 11;
+            // 
+            // CompanyDetailsEmployeeId
+            // 
+            this.CompanyDetailsEmployeeId.AutoSize = true;
+            this.CompanyDetailsEmployeeId.Location = new System.Drawing.Point(106, 236);
+            this.CompanyDetailsEmployeeId.Name = "CompanyDetailsEmployeeId";
+            this.CompanyDetailsEmployeeId.Size = new System.Drawing.Size(67, 13);
+            this.CompanyDetailsEmployeeId.TabIndex = 10;
+            this.CompanyDetailsEmployeeId.Text = "Employee ID";
+            // 
             // CompanyDetailsClearButton
             // 
-            this.CompanyDetailsClearButton.Location = new System.Drawing.Point(432, 261);
+            this.CompanyDetailsClearButton.Location = new System.Drawing.Point(449, 261);
             this.CompanyDetailsClearButton.Name = "CompanyDetailsClearButton";
             this.CompanyDetailsClearButton.Size = new System.Drawing.Size(80, 28);
             this.CompanyDetailsClearButton.TabIndex = 9;
@@ -628,10 +647,11 @@
             // technicalDetailsTabPage
             // 
             this.technicalDetailsTabPage.BackColor = System.Drawing.Color.Peru;
+            this.technicalDetailsTabPage.Controls.Add(this.TechnicalDetailEmployeeIdTextBox);
+            this.technicalDetailsTabPage.Controls.Add(this.TechnicalDetailsEmployeeIdLabel);
+            this.technicalDetailsTabPage.Controls.Add(this.TechnicalDetailsClearButton);
             this.technicalDetailsTabPage.Controls.Add(this.technicalDetailsSaveButton);
-            this.technicalDetailsTabPage.Controls.Add(this.ormTechnologiesTextBox);
-            this.technicalDetailsTabPage.Controls.Add(this.label12);
-            this.technicalDetailsTabPage.Controls.Add(this.databasesTextBox);
+            this.technicalDetailsTabPage.Controls.Add(this.databaseTextBox);
             this.technicalDetailsTabPage.Controls.Add(this.label11);
             this.technicalDetailsTabPage.Controls.Add(this.programmingLanguagesTextBox);
             this.technicalDetailsTabPage.Controls.Add(this.label10);
@@ -646,53 +666,36 @@
             // 
             // technicalDetailsSaveButton
             // 
-            this.technicalDetailsSaveButton.Location = new System.Drawing.Point(342, 251);
+            this.technicalDetailsSaveButton.Location = new System.Drawing.Point(265, 233);
             this.technicalDetailsSaveButton.Margin = new System.Windows.Forms.Padding(2);
             this.technicalDetailsSaveButton.Name = "technicalDetailsSaveButton";
             this.technicalDetailsSaveButton.Size = new System.Drawing.Size(97, 31);
             this.technicalDetailsSaveButton.TabIndex = 8;
             this.technicalDetailsSaveButton.Text = "Save";
             this.technicalDetailsSaveButton.UseVisualStyleBackColor = true;
+            this.technicalDetailsSaveButton.Click += new System.EventHandler(this.technicalDetailsSaveButton_Click);
             // 
-            // ormTechnologiesTextBox
+            // databaseTextBox
             // 
-            this.ormTechnologiesTextBox.Location = new System.Drawing.Point(265, 94);
-            this.ormTechnologiesTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.ormTechnologiesTextBox.Name = "ormTechnologiesTextBox";
-            this.ormTechnologiesTextBox.Size = new System.Drawing.Size(262, 20);
-            this.ormTechnologiesTextBox.TabIndex = 7;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(94, 94);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(99, 13);
-            this.label12.TabIndex = 6;
-            this.label12.Text = "ORM Technologies";
-            // 
-            // databasesTextBox
-            // 
-            this.databasesTextBox.Location = new System.Drawing.Point(265, 132);
-            this.databasesTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.databasesTextBox.Name = "databasesTextBox";
-            this.databasesTextBox.Size = new System.Drawing.Size(262, 20);
-            this.databasesTextBox.TabIndex = 5;
+            this.databaseTextBox.Location = new System.Drawing.Point(265, 142);
+            this.databaseTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.databaseTextBox.Name = "databaseTextBox";
+            this.databaseTextBox.Size = new System.Drawing.Size(262, 20);
+            this.databaseTextBox.TabIndex = 5;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(94, 132);
+            this.label11.Location = new System.Drawing.Point(94, 145);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(58, 13);
+            this.label11.Size = new System.Drawing.Size(53, 13);
             this.label11.TabIndex = 4;
-            this.label11.Text = "Databases";
+            this.label11.Text = "Database";
             // 
             // programmingLanguagesTextBox
             // 
-            this.programmingLanguagesTextBox.Location = new System.Drawing.Point(265, 165);
+            this.programmingLanguagesTextBox.Location = new System.Drawing.Point(265, 93);
             this.programmingLanguagesTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.programmingLanguagesTextBox.Name = "programmingLanguagesTextBox";
             this.programmingLanguagesTextBox.Size = new System.Drawing.Size(262, 20);
@@ -701,7 +704,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(94, 165);
+            this.label10.Location = new System.Drawing.Point(94, 93);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(124, 13);
@@ -729,6 +732,7 @@
             // educationalDetailTabPage
             // 
             this.educationalDetailTabPage.BackColor = System.Drawing.Color.Peru;
+            this.educationalDetailTabPage.Controls.Add(this.EducationDetailsClearButton);
             this.educationalDetailTabPage.Controls.Add(this.educationalDetailsSaveButton);
             this.educationalDetailTabPage.Controls.Add(this.yearOfPassTextBox);
             this.educationalDetailTabPage.Controls.Add(this.label15);
@@ -745,7 +749,7 @@
             // 
             // educationalDetailsSaveButton
             // 
-            this.educationalDetailsSaveButton.Location = new System.Drawing.Point(329, 206);
+            this.educationalDetailsSaveButton.Location = new System.Drawing.Point(264, 202);
             this.educationalDetailsSaveButton.Margin = new System.Windows.Forms.Padding(2);
             this.educationalDetailsSaveButton.Name = "educationalDetailsSaveButton";
             this.educationalDetailsSaveButton.Size = new System.Drawing.Size(104, 28);
@@ -822,10 +826,10 @@
             // 
             // reportSaveButton
             // 
-            this.reportSaveButton.Location = new System.Drawing.Point(346, 283);
+            this.reportSaveButton.Location = new System.Drawing.Point(224, 282);
             this.reportSaveButton.Margin = new System.Windows.Forms.Padding(2);
             this.reportSaveButton.Name = "reportSaveButton";
-            this.reportSaveButton.Size = new System.Drawing.Size(109, 35);
+            this.reportSaveButton.Size = new System.Drawing.Size(99, 32);
             this.reportSaveButton.TabIndex = 2;
             this.reportSaveButton.Text = "Save";
             this.reportSaveButton.UseVisualStyleBackColor = true;
@@ -988,21 +992,40 @@
             this.EmployeeDetailGridView.Size = new System.Drawing.Size(786, 77);
             this.EmployeeDetailGridView.TabIndex = 0;
             // 
-            // CompanyDetailsEmployeeId
+            // TechnicalDetailsClearButton
             // 
-            this.CompanyDetailsEmployeeId.AutoSize = true;
-            this.CompanyDetailsEmployeeId.Location = new System.Drawing.Point(106, 236);
-            this.CompanyDetailsEmployeeId.Name = "CompanyDetailsEmployeeId";
-            this.CompanyDetailsEmployeeId.Size = new System.Drawing.Size(67, 13);
-            this.CompanyDetailsEmployeeId.TabIndex = 10;
-            this.CompanyDetailsEmployeeId.Text = "Employee ID";
+            this.TechnicalDetailsClearButton.Location = new System.Drawing.Point(429, 233);
+            this.TechnicalDetailsClearButton.Name = "TechnicalDetailsClearButton";
+            this.TechnicalDetailsClearButton.Size = new System.Drawing.Size(98, 31);
+            this.TechnicalDetailsClearButton.TabIndex = 9;
+            this.TechnicalDetailsClearButton.Text = "Clear";
+            this.TechnicalDetailsClearButton.UseVisualStyleBackColor = true;
             // 
-            // CompanyDetailsEmployeeTextBox
+            // EducationDetailsClearButton
             // 
-            this.CompanyDetailsEmployeeTextBox.Location = new System.Drawing.Point(268, 220);
-            this.CompanyDetailsEmployeeTextBox.Name = "CompanyDetailsEmployeeTextBox";
-            this.CompanyDetailsEmployeeTextBox.Size = new System.Drawing.Size(256, 20);
-            this.CompanyDetailsEmployeeTextBox.TabIndex = 11;
+            this.EducationDetailsClearButton.Location = new System.Drawing.Point(414, 202);
+            this.EducationDetailsClearButton.Name = "EducationDetailsClearButton";
+            this.EducationDetailsClearButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.EducationDetailsClearButton.Size = new System.Drawing.Size(92, 28);
+            this.EducationDetailsClearButton.TabIndex = 7;
+            this.EducationDetailsClearButton.Text = "Clear";
+            this.EducationDetailsClearButton.UseVisualStyleBackColor = true;
+            // 
+            // TechnicalDetailsEmployeeIdLabel
+            // 
+            this.TechnicalDetailsEmployeeIdLabel.AutoSize = true;
+            this.TechnicalDetailsEmployeeIdLabel.Location = new System.Drawing.Point(94, 188);
+            this.TechnicalDetailsEmployeeIdLabel.Name = "TechnicalDetailsEmployeeIdLabel";
+            this.TechnicalDetailsEmployeeIdLabel.Size = new System.Drawing.Size(67, 13);
+            this.TechnicalDetailsEmployeeIdLabel.TabIndex = 10;
+            this.TechnicalDetailsEmployeeIdLabel.Text = "Employee ID";
+            // 
+            // TechnicalDetailEmployeeIdTextBox
+            // 
+            this.TechnicalDetailEmployeeIdTextBox.Location = new System.Drawing.Point(265, 188);
+            this.TechnicalDetailEmployeeIdTextBox.Name = "TechnicalDetailEmployeeIdTextBox";
+            this.TechnicalDetailEmployeeIdTextBox.Size = new System.Drawing.Size(262, 20);
+            this.TechnicalDetailEmployeeIdTextBox.TabIndex = 11;
             // 
             // Pioneer
             // 
@@ -1088,9 +1111,7 @@
         private System.Windows.Forms.Button projectDetailsSaveButton;
         private System.Windows.Forms.Button companyDetailsSaveButton;
         private System.Windows.Forms.Button technicalDetailsSaveButton;
-        private System.Windows.Forms.TextBox ormTechnologiesTextBox;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox databasesTextBox;
+        private System.Windows.Forms.TextBox databaseTextBox;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox programmingLanguagesTextBox;
         private System.Windows.Forms.Label label10;
@@ -1127,6 +1148,10 @@
         private System.Windows.Forms.Button CompanyDetailsClearButton;
         private System.Windows.Forms.TextBox CompanyDetailsEmployeeTextBox;
         private System.Windows.Forms.Label CompanyDetailsEmployeeId;
+        private System.Windows.Forms.Button TechnicalDetailsClearButton;
+        private System.Windows.Forms.Button EducationDetailsClearButton;
+        private System.Windows.Forms.TextBox TechnicalDetailEmployeeIdTextBox;
+        private System.Windows.Forms.Label TechnicalDetailsEmployeeIdLabel;
     }
 }
 
