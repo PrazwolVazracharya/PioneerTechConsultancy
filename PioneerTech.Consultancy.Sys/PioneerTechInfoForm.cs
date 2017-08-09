@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using PioneerTech.Consultancy.DAL;
+using PioneerTech.Consultancy.Model;
 
 namespace PioneerTech.Consultancy.Sys
 {
@@ -35,14 +36,16 @@ namespace PioneerTech.Consultancy.Sys
         {
             try
             {
-
-                String EmployerName = CompanyDeatilsEmployerNameTextBox.Text;
-                int ContactNumber = Convert.ToInt32(CompantDetailsContactNumberTextBox.Text);
-                String Location = CompanyDetailsLocationTextBox.Text;
-                String Website = CompanyDetailsWebsiteTextBox.Text;
-                int EmployeeId = Convert.ToInt32(CompanyDetailsEmployeeTextBox.Text);
+                CompanyDetailsModel companyDetailsobj = new CompanyDetailsModel
+                {
+                    EmployerName = CompanyDeatilsEmployerNameTextBox.Text,
+                    ContactNumber = Convert.ToInt64(CompantDetailsContactNumberTextBox.Text),
+                    Location = CompanyDetailsLocationTextBox.Text,
+                    Website = CompanyDetailsWebsiteTextBox.Text,
+                    EmployeeId = Convert.ToInt32(CompanyDetailsEmployeeTextBox.Text)
+                };
                 EmployeeDataAccessLayer employeeDataAccessobj = new EmployeeDataAccessLayer();
-                int RowAffected_Company = employeeDataAccessobj.CompanySqlConnection(EmployerName, ContactNumber, Location, Website, EmployeeId);
+                int RowAffected_Company = employeeDataAccessobj.CompanySqlConnection(companyDetailsobj);
 
                 /*SqlConnection mysqlconnection = new SqlConnection();
                 mysqlconnection.ConnectionString = "Data Source = DESKTOP-6T65F42;" +
@@ -52,10 +55,10 @@ namespace PioneerTech.Consultancy.Sys
                                      "'" + EmployerName + "'," + ContactNumber + ",'" + Location + "','" + Website + "'," + EmployeeId + ")", mysqlconnection);
                 mysqlconnection.Open();
                 SqlDataReader DrC = CompanyDetailCommand.ExecuteReader();
-
                 mysqlconnection.Close();
                 MessageBox.Show("Datas Saved in the Database");*/
             }
+
             catch (Exception exception)
             {
                 MessageBox.Show("An Error has Occured, Please contact the Administrator!" + exception.Message);
@@ -69,8 +72,6 @@ namespace PioneerTech.Consultancy.Sys
         {
 
         }
-
-
 
         private void EmployeeDetailsClearButton_Click(object sender, EventArgs e)
         {
@@ -90,36 +91,38 @@ namespace PioneerTech.Consultancy.Sys
         {
             try
             {
-
-                String FirstName = firstNameTextBox.Text;
-                String LastName = lastNameTextBox.Text;
-                String EmailId = emailIDTextBox.Text;
-                long PhoneNumber = Convert.ToInt64(phoneNumberTextBox.Text);
-                long AlternatePhoneNumber = Convert.ToInt64(alternatePhoneTextBox.Text);
-                String Address1 = address1TextBox.Text;
-                String Address2 = address2TextBox.Text;
-                String HomeCountry = homeCountryTextBox.Text;
-                String CurrentCountry = currentCountryTextBox.Text;
-                int ZipCode = Convert.ToInt32(zipcodeTextBox.Text);
+                EmployeeDetailsModel employeeDetailobj = new EmployeeDetailsModel
+                {
+                    FirstName = firstNameTextBox.Text,
+                    LastName = lastNameTextBox.Text,
+                    EmailId = emailIDTextBox.Text,
+                    PhoneNumber = Convert.ToInt64(phoneNumberTextBox.Text),
+                    AlternatePhoneNumber = Convert.ToInt64(alternatePhoneTextBox.Text),
+                    Address1 = address1TextBox.Text,
+                    Address2 = address2TextBox.Text,
+                    HomeCountry = homeCountryTextBox.Text,
+                    CurrentCountry = currentCountryTextBox.Text,
+                    ZipCode = Convert.ToInt32(zipcodeTextBox.Text)
+                };
                 EmployeeDataAccessLayer employeeDataAccessobj = new EmployeeDataAccessLayer();
-                int RowsAffected = employeeDataAccessobj.EmployeeSqlConnection(FirstName, LastName, EmailId, PhoneNumber, AlternatePhoneNumber, Address1, Address2, HomeCountry, CurrentCountry, ZipCode);
+                int RowsAffected = employeeDataAccessobj.EmployeeSqlConnection(employeeDetailobj);
 
                 /*// Creating database connection
-                SqlConnection mysqlconnection = new SqlConnection();
-                mysqlconnection.ConnectionString = "Data Source = DESKTOP-6T65F42;" +
-                             "database = PioneerTechConsultancy_Database;Integrated security = SSPI";
+                   SqlConnection mysqlconnection = new SqlConnection();
+                   mysqlconnection.ConnectionString = "Data Source = DESKTOP-6T65F42;" +
+                                "database = PioneerTechConsultancy_Database;Integrated security = SSPI";
 
 
-                SqlCommand EmployeeDetailCommand = new SqlCommand("INSERT INTO EmployeeDetail VALUES(" +
-                             "'" + FirstName + "','" + LastName + "','" + EmailId + "'," +
-                             PhoneNumber + "," + AlternatePhoneNumber + ",'" + Address1 + "','" + Address2 +
-                             "','" + HomeCountry + "','" + CurrentCountry + "'," + ZipCode + ")", mysqlconnection);
-                //Opening Sql Database Connection
-                mysqlconnection.Open();
-                SqlDataReader Dr = EmployeeDetailCommand.ExecuteReader();
+                   SqlCommand EmployeeDetailCommand = new SqlCommand("INSERT INTO EmployeeDetail VALUES(" +
+                                "'" + FirstName + "','" + LastName + "','" + EmailId + "'," +
+                                PhoneNumber + "," + AlternatePhoneNumber + ",'" + Address1 + "','" + Address2 +
+                                "','" + HomeCountry + "','" + CurrentCountry + "'," + ZipCode + ")", mysqlconnection);
+                   //Opening Sql Database Connection
+                   mysqlconnection.Open();
+                   SqlDataReader Dr = EmployeeDetailCommand.ExecuteReader();
 
-                mysqlconnection.Close();
-                MessageBox.Show("Datas Saved in the Database");*/
+                   mysqlconnection.Close();
+                   MessageBox.Show("Datas Saved in the Database");*/
             }
             catch (Exception exception)
             {
@@ -135,13 +138,18 @@ namespace PioneerTech.Consultancy.Sys
         {
             try
             {
-                String ProjectName = ProjectDetailsProjectNameTextBox.Text;
-                String ClientName = ProjectDetailsClientNameTextBox.Text;
-                String Location = ProjectDetailsLocationTextBox.Text;
-                String Roles = ProjectDetailsRolesTextBox.Text;
-                int EmployeeId = Convert.ToInt32(ProjectDetailsEmployeeIdTextbox.Text);
+                ProjectDetailsModel projectDetailsobj = new ProjectDetailsModel
+                {
+                    ProjectName = ProjectDetailsProjectNameTextBox.Text,
+                    ClientName = ProjectDetailsProjectNameTextBox.Text,
+                    Location = ProjectDetailsLocationTextBox.Text,
+                    Roles = ProjectDetailsRolesTextBox.Text,
+                    EmployeeId = Convert.ToInt32(ProjectDetailsEmployeeIdTextbox.Text)
+
+                };
+
                 EmployeeDataAccessLayer employeeDataAccessobj = new EmployeeDataAccessLayer();
-                int RowsAffected_projectDetails = employeeDataAccessobj.ProjectSqlConnection(ProjectName, ClientName, Location, Roles, EmployeeId);
+                int RowsAffected_projectDetails = employeeDataAccessobj.ProjectSqlConnection(projectDetailsobj);
 
                 /*SqlConnection mysqlconnection = new SqlConnection();
                 mysqlconnection.ConnectionString = "Data Source = DESKTOP-6T65F42;" +
@@ -154,8 +162,6 @@ namespace PioneerTech.Consultancy.Sys
                 /*MessageBox.Show("INSERT INTO ProjectDetail VALUES(" +
                                  "'" + ProjectName + "','" + ClientName + "','" + Location + "'," +
                                  Roles + "," + EmployeeId + ")");*/
-
-
                 /*mysqlconnection.Open();
                 SqlDataReader DrP = ProjectDetailCommand.ExecuteReader();
 
@@ -232,12 +238,16 @@ namespace PioneerTech.Consultancy.Sys
         {
             try
             {
-                String UserInterface = userInterfaceTextBox.Text;
-                String ProgrammingLanguages = programmingLanguagesTextBox.Text;
-                String Database = databaseTextBox.Text;
-                int EmployeeId = Convert.ToInt32(TechnicalDetailEmployeeIdTextBox.Text);
+                TechnicalDetailsModel TechnicalDetailsobj = new TechnicalDetailsModel
+                {
+                    UserInterface = userInterfaceTextBox.Text,
+                    ProgrammingLanguages = programmingLanguagesTextBox.Text,
+                    Database = databaseTextBox.Text,
+                    EmployeeId = Convert.ToInt32(TechnicalDetailEmployeeIdTextBox.Text)
+                };
+
                 EmployeeDataAccessLayer employeeDataAccessobj = new EmployeeDataAccessLayer();
-                int RowsAffected_technicalDetails = employeeDataAccessobj.TechnicalSqlConnection(UserInterface, ProgrammingLanguages, Database, EmployeeId);
+                int RowsAffected_technicalDetails = employeeDataAccessobj.TechnicalSqlConnection(TechnicalDetailsobj);
             }
             catch (Exception exception)
             {
@@ -248,9 +258,18 @@ namespace PioneerTech.Consultancy.Sys
 
             }
         }
+
+        private void CompanyDetailsClearButton_Click(object sender, EventArgs e)
+        {
+            CompanyDeatilsEmployerNameTextBox.Clear();
+            CompantDetailsContactNumberTextBox.Clear();
+            CompanyDetailsLocationTextBox.Clear();
+            CompanyDetailsWebsiteTextBox.Clear();
+            CompanyDetailsEmployeeTextBox.Clear();
+        }
     }
 }
 
 
-    
-   
+
+

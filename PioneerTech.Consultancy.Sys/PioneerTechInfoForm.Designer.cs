@@ -79,6 +79,9 @@
             this.CompanyDeatilsEmployerNameTextBox = new System.Windows.Forms.TextBox();
             this.CompanyDetailsEmployerNameLabel = new System.Windows.Forms.Label();
             this.technicalDetailsTabPage = new System.Windows.Forms.TabPage();
+            this.TechnicalDetailEmployeeIdTextBox = new System.Windows.Forms.TextBox();
+            this.TechnicalDetailsEmployeeIdLabel = new System.Windows.Forms.Label();
+            this.TechnicalDetailsClearButton = new System.Windows.Forms.Button();
             this.technicalDetailsSaveButton = new System.Windows.Forms.Button();
             this.databaseTextBox = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -87,6 +90,7 @@
             this.userInterfaceTextBox = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.educationalDetailTabPage = new System.Windows.Forms.TabPage();
+            this.EducationDetailsClearButton = new System.Windows.Forms.Button();
             this.educationalDetailsSaveButton = new System.Windows.Forms.Button();
             this.yearOfPassTextBox = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
@@ -112,10 +116,6 @@
             this.label18 = new System.Windows.Forms.Label();
             this.ProjectDetailsGridView = new System.Windows.Forms.DataGridView();
             this.EmployeeDetailGridView = new System.Windows.Forms.DataGridView();
-            this.TechnicalDetailsClearButton = new System.Windows.Forms.Button();
-            this.EducationDetailsClearButton = new System.Windows.Forms.Button();
-            this.TechnicalDetailsEmployeeIdLabel = new System.Windows.Forms.Label();
-            this.TechnicalDetailEmployeeIdTextBox = new System.Windows.Forms.TextBox();
             this.DashBoard.SuspendLayout();
             this.employeeDetailTabPage.SuspendLayout();
             this.projectDetailsTabPage.SuspendLayout();
@@ -560,6 +560,7 @@
             this.CompanyDetailsClearButton.TabIndex = 9;
             this.CompanyDetailsClearButton.Text = "Clear";
             this.CompanyDetailsClearButton.UseVisualStyleBackColor = true;
+            this.CompanyDetailsClearButton.Click += new System.EventHandler(this.CompanyDetailsClearButton_Click);
             // 
             // companyDetailsSaveButton
             // 
@@ -664,6 +665,31 @@
             this.technicalDetailsTabPage.TabIndex = 3;
             this.technicalDetailsTabPage.Text = "Technical Details";
             // 
+            // TechnicalDetailEmployeeIdTextBox
+            // 
+            this.TechnicalDetailEmployeeIdTextBox.Location = new System.Drawing.Point(265, 188);
+            this.TechnicalDetailEmployeeIdTextBox.Name = "TechnicalDetailEmployeeIdTextBox";
+            this.TechnicalDetailEmployeeIdTextBox.Size = new System.Drawing.Size(262, 20);
+            this.TechnicalDetailEmployeeIdTextBox.TabIndex = 11;
+            // 
+            // TechnicalDetailsEmployeeIdLabel
+            // 
+            this.TechnicalDetailsEmployeeIdLabel.AutoSize = true;
+            this.TechnicalDetailsEmployeeIdLabel.Location = new System.Drawing.Point(94, 188);
+            this.TechnicalDetailsEmployeeIdLabel.Name = "TechnicalDetailsEmployeeIdLabel";
+            this.TechnicalDetailsEmployeeIdLabel.Size = new System.Drawing.Size(67, 13);
+            this.TechnicalDetailsEmployeeIdLabel.TabIndex = 10;
+            this.TechnicalDetailsEmployeeIdLabel.Text = "Employee ID";
+            // 
+            // TechnicalDetailsClearButton
+            // 
+            this.TechnicalDetailsClearButton.Location = new System.Drawing.Point(429, 233);
+            this.TechnicalDetailsClearButton.Name = "TechnicalDetailsClearButton";
+            this.TechnicalDetailsClearButton.Size = new System.Drawing.Size(98, 31);
+            this.TechnicalDetailsClearButton.TabIndex = 9;
+            this.TechnicalDetailsClearButton.Text = "Clear";
+            this.TechnicalDetailsClearButton.UseVisualStyleBackColor = true;
+            // 
             // technicalDetailsSaveButton
             // 
             this.technicalDetailsSaveButton.Location = new System.Drawing.Point(265, 233);
@@ -746,6 +772,16 @@
             this.educationalDetailTabPage.Size = new System.Drawing.Size(982, 519);
             this.educationalDetailTabPage.TabIndex = 4;
             this.educationalDetailTabPage.Text = "Educational Details";
+            // 
+            // EducationDetailsClearButton
+            // 
+            this.EducationDetailsClearButton.Location = new System.Drawing.Point(414, 202);
+            this.EducationDetailsClearButton.Name = "EducationDetailsClearButton";
+            this.EducationDetailsClearButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.EducationDetailsClearButton.Size = new System.Drawing.Size(92, 28);
+            this.EducationDetailsClearButton.TabIndex = 7;
+            this.EducationDetailsClearButton.Text = "Clear";
+            this.EducationDetailsClearButton.UseVisualStyleBackColor = true;
             // 
             // educationalDetailsSaveButton
             // 
@@ -991,41 +1027,6 @@
             this.EmployeeDetailGridView.Name = "EmployeeDetailGridView";
             this.EmployeeDetailGridView.Size = new System.Drawing.Size(786, 77);
             this.EmployeeDetailGridView.TabIndex = 0;
-            // 
-            // TechnicalDetailsClearButton
-            // 
-            this.TechnicalDetailsClearButton.Location = new System.Drawing.Point(429, 233);
-            this.TechnicalDetailsClearButton.Name = "TechnicalDetailsClearButton";
-            this.TechnicalDetailsClearButton.Size = new System.Drawing.Size(98, 31);
-            this.TechnicalDetailsClearButton.TabIndex = 9;
-            this.TechnicalDetailsClearButton.Text = "Clear";
-            this.TechnicalDetailsClearButton.UseVisualStyleBackColor = true;
-            // 
-            // EducationDetailsClearButton
-            // 
-            this.EducationDetailsClearButton.Location = new System.Drawing.Point(414, 202);
-            this.EducationDetailsClearButton.Name = "EducationDetailsClearButton";
-            this.EducationDetailsClearButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.EducationDetailsClearButton.Size = new System.Drawing.Size(92, 28);
-            this.EducationDetailsClearButton.TabIndex = 7;
-            this.EducationDetailsClearButton.Text = "Clear";
-            this.EducationDetailsClearButton.UseVisualStyleBackColor = true;
-            // 
-            // TechnicalDetailsEmployeeIdLabel
-            // 
-            this.TechnicalDetailsEmployeeIdLabel.AutoSize = true;
-            this.TechnicalDetailsEmployeeIdLabel.Location = new System.Drawing.Point(94, 188);
-            this.TechnicalDetailsEmployeeIdLabel.Name = "TechnicalDetailsEmployeeIdLabel";
-            this.TechnicalDetailsEmployeeIdLabel.Size = new System.Drawing.Size(67, 13);
-            this.TechnicalDetailsEmployeeIdLabel.TabIndex = 10;
-            this.TechnicalDetailsEmployeeIdLabel.Text = "Employee ID";
-            // 
-            // TechnicalDetailEmployeeIdTextBox
-            // 
-            this.TechnicalDetailEmployeeIdTextBox.Location = new System.Drawing.Point(265, 188);
-            this.TechnicalDetailEmployeeIdTextBox.Name = "TechnicalDetailEmployeeIdTextBox";
-            this.TechnicalDetailEmployeeIdTextBox.Size = new System.Drawing.Size(262, 20);
-            this.TechnicalDetailEmployeeIdTextBox.TabIndex = 11;
             // 
             // Pioneer
             // 
