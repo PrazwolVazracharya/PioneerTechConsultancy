@@ -1,0 +1,5 @@
+C:\Users\Prazwols pc\documents\visual studio 2017\Projects\PioneerTech.Consultancy.Sys\PioneerTech.Consultancy.Model\bin\Release\PioneerTech.Consultancy.Model.dll
+C:\Users\Prazwols pc\documents\visual studio 2017\Projects\PioneerTech.Consultancy.Sys\PioneerTech.Consultancy.Model\bin\Release\PioneerTech.Consultancy.Model.pdb
+C:\Users\Prazwols pc\documents\visual studio 2017\Projects\PioneerTech.Consultancy.Sys\PioneerTech.Consultancy.Model\obj\Release\PioneerTech.Consultancy.Model.csprojResolveAssemblyReference.cache
+C:\Users\Prazwols pc\documents\visual studio 2017\Projects\PioneerTech.Consultancy.Sys\PioneerTech.Consultancy.Model\obj\Release\PioneerTech.Consultancy.Model.dll
+C:\Users\Prazwols pc\documents\visual studio 2017\Projects\PioneerTech.Consultancy.Sys\PioneerTech.Consultancy.Model\obj\Release\PioneerTech.Consultancy.Model.pdb

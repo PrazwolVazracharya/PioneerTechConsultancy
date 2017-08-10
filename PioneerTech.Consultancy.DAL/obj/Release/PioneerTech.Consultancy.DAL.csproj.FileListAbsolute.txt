@@ -3,3 +3,5 @@ C:\Users\Prazwols pc\documents\visual studio 2017\Projects\PioneerTech.Consultan
 C:\Users\Prazwols pc\documents\visual studio 2017\Projects\PioneerTech.Consultancy.Sys\PioneerTech.Consultancy.DAL\obj\Release\PioneerTech.Consultancy.DAL.csprojResolveAssemblyReference.cache
 C:\Users\Prazwols pc\documents\visual studio 2017\Projects\PioneerTech.Consultancy.Sys\PioneerTech.Consultancy.DAL\obj\Release\PioneerTech.Consultancy.DAL.dll
 C:\Users\Prazwols pc\documents\visual studio 2017\Projects\PioneerTech.Consultancy.Sys\PioneerTech.Consultancy.DAL\obj\Release\PioneerTech.Consultancy.DAL.pdb
+C:\Users\Prazwols pc\documents\visual studio 2017\Projects\PioneerTech.Consultancy.Sys\PioneerTech.Consultancy.DAL\bin\Release\PioneerTech.Consultancy.Model.dll
+C:\Users\Prazwols pc\documents\visual studio 2017\Projects\PioneerTech.Consultancy.Sys\PioneerTech.Consultancy.DAL\bin\Release\PioneerTech.Consultancy.Model.pdb

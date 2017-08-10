@@ -343,10 +343,13 @@
 		<row><td>IS_ININSTALL_SHORTCUT</td><td>{9472ABF9-9279-4A35-8720-ED1ED3FE3864}</td><td>INSTALLDIR</td><td>8</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>PioneerTech.Consultancy.DAL.dll</td><td>{A61FE322-F79B-4BE9-AA00-74E22AB750A4}</td><td>INSTALLDIR</td><td>8</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>PioneerTech.Consultancy.DAL.dll1</td><td>{89367D7F-B764-4EDD-8B8E-3325D4976966}</td><td>INSTALLDIR</td><td>8</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>PioneerTech.Consultancy.DAL.dll2</td><td>{A7E7739F-24E9-42D4-8E36-7C5553496B7E}</td><td>INSTALLDIR</td><td>8</td><td/><td>pioneertech.consultancy.dal.</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>PioneerTech.Consultancy.DAL.dll2</td><td>{A7E7739F-24E9-42D4-8E36-7C5553496B7E}</td><td>INSTALLDIR</td><td>8</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>PioneerTech.Consultancy.DAL.dll3</td><td>{63C07D13-B741-428F-B211-1D9F8A1372AD}</td><td>INSTALLDIR</td><td>8</td><td/><td>pioneertech.consultancy.dal.</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>PioneerTech.Consultancy.Model.dll</td><td>{E65653DF-E6A5-49B1-BBDF-6063DCF5EA86}</td><td>INSTALLDIR</td><td>8</td><td/><td>pioneertech.consultancy.mode</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>PioneerTech.Consultancy.Sys.exe</td><td>{CBAF3A75-EC05-486C-9CF5-76B30CE4A8D9}</td><td>INSTALLDIR</td><td>8</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>PioneerTech.Consultancy.Sys.exe1</td><td>{0CBCEE19-E85C-42E3-BB29-5CBED8FA1C4A}</td><td>INSTALLDIR</td><td>8</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>PioneerTech.Consultancy.Sys.exe2</td><td>{E89EFB2F-087B-4074-8B84-5C1E2F452B96}</td><td>INSTALLDIR</td><td>8</td><td/><td>pioneertech.consultancy.sys.</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>PioneerTech.Consultancy.Sys.exe2</td><td>{E89EFB2F-087B-4074-8B84-5C1E2F452B96}</td><td>INSTALLDIR</td><td>8</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>PioneerTech.Consultancy.Sys.exe3</td><td>{F5C717FE-2602-405B-9422-05504FC01A6E}</td><td>INSTALLDIR</td><td>8</td><td/><td>pioneertech.consultancy.sys.</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 	</table>
 
 	<table name="Condition">
@@ -1016,8 +1019,10 @@
 		<row><td>INSTALLDIR</td><td>IS_ININSTALL_SHORTCUT</td></row>
 		<row><td>INSTALLDIR</td><td>PioneerTech.Consultancy.DAL.dll</td></row>
 		<row><td>INSTALLDIR</td><td>PioneerTech.Consultancy.DAL.dll1</td></row>
+		<row><td>INSTALLDIR</td><td>PioneerTech.Consultancy.DAL.dll2</td></row>
 		<row><td>INSTALLDIR</td><td>PioneerTech.Consultancy.Sys.exe</td></row>
 		<row><td>INSTALLDIR</td><td>PioneerTech.Consultancy.Sys.exe1</td></row>
+		<row><td>INSTALLDIR</td><td>PioneerTech.Consultancy.Sys.exe2</td></row>
 	</table>
 
 	<table name="CustomAction">
@@ -1829,9 +1834,12 @@
 		<row><td>PioneerTechConsultancySystem.se</td><td>PioneerTech.Consultancy.DAL.dll</td></row>
 		<row><td>PioneerTechConsultancySystem.se</td><td>PioneerTech.Consultancy.DAL.dll1</td></row>
 		<row><td>PioneerTechConsultancySystem.se</td><td>PioneerTech.Consultancy.DAL.dll2</td></row>
+		<row><td>PioneerTechConsultancySystem.se</td><td>PioneerTech.Consultancy.DAL.dll3</td></row>
+		<row><td>PioneerTechConsultancySystem.se</td><td>PioneerTech.Consultancy.Model.dll</td></row>
 		<row><td>PioneerTechConsultancySystem.se</td><td>PioneerTech.Consultancy.Sys.exe</td></row>
 		<row><td>PioneerTechConsultancySystem.se</td><td>PioneerTech.Consultancy.Sys.exe1</td></row>
 		<row><td>PioneerTechConsultancySystem.se</td><td>PioneerTech.Consultancy.Sys.exe2</td></row>
+		<row><td>PioneerTechConsultancySystem.se</td><td>PioneerTech.Consultancy.Sys.exe3</td></row>
 	</table>
 
 	<table name="File">
@@ -1846,9 +1854,11 @@
 		<col def="S255">ISBuildSourcePath</col>
 		<col def="I4">ISAttributes</col>
 		<col def="S72">ISComponentSubFolder_</col>
-		<row><td>pioneertech.consultancy.dal.</td><td>PioneerTech.Consultancy.DAL.dll2</td><td>PIONEE~1.DLL|PioneerTech.Consultancy.DAL.dll</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;VSSolutionFolder&gt;\PioneerTech.Consultancy.Sys\bin\Release\PioneerTech.Consultancy.DAL.dll</td><td>1</td><td/></row>
+		<row><td>pioneertech.consultancy.dal.</td><td>PioneerTech.Consultancy.DAL.dll3</td><td>PIONEE~1.DLL|PioneerTech.Consultancy.DAL.dll</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;VSSolutionFolder&gt;\PioneerTech.Consultancy.Sys\bin\Release\PioneerTech.Consultancy.DAL.dll</td><td>1</td><td/></row>
 		<row><td>pioneertech.consultancy.dal.1</td><td>AllOtherFiles</td><td>PIONEE~1.PDB|PioneerTech.Consultancy.DAL.pdb</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;VSSolutionFolder&gt;\PioneerTech.Consultancy.Sys\bin\Release\PioneerTech.Consultancy.DAL.pdb</td><td>1</td><td/></row>
-		<row><td>pioneertech.consultancy.sys.</td><td>PioneerTech.Consultancy.Sys.exe2</td><td>PIONEE~1.EXE|PioneerTech.Consultancy.Sys.exe</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;VSSolutionFolder&gt;\PioneerTech.Consultancy.Sys\bin\Release\PioneerTech.Consultancy.Sys.exe</td><td>1</td><td/></row>
+		<row><td>pioneertech.consultancy.mode</td><td>PioneerTech.Consultancy.Model.dll</td><td>PIONEE~1.DLL|PioneerTech.Consultancy.Model.dll</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;VSSolutionFolder&gt;\PioneerTech.Consultancy.Sys\bin\Release\PioneerTech.Consultancy.Model.dll</td><td>1</td><td/></row>
+		<row><td>pioneertech.consultancy.mode1</td><td>AllOtherFiles</td><td>PIONEE~1.PDB|PioneerTech.Consultancy.Model.pdb</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;VSSolutionFolder&gt;\PioneerTech.Consultancy.Sys\bin\Release\PioneerTech.Consultancy.Model.pdb</td><td>1</td><td/></row>
+		<row><td>pioneertech.consultancy.sys.</td><td>PioneerTech.Consultancy.Sys.exe3</td><td>PIONEE~1.EXE|PioneerTech.Consultancy.Sys.exe</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;VSSolutionFolder&gt;\PioneerTech.Consultancy.Sys\bin\Release\PioneerTech.Consultancy.Sys.exe</td><td>1</td><td/></row>
 		<row><td>pioneertech.consultancy.sys.1</td><td>AllOtherFiles</td><td>PIONEE~1.CON|PioneerTech.Consultancy.Sys.exe.config</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;VSSolutionFolder&gt;\PioneerTech.Consultancy.Sys\bin\Release\PioneerTech.Consultancy.Sys.exe.config</td><td>1</td><td/></row>
 		<row><td>pioneertech.consultancy.sys.2</td><td>AllOtherFiles</td><td>PIONEE~1.PDB|PioneerTech.Consultancy.Sys.pdb</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;VSSolutionFolder&gt;\PioneerTech.Consultancy.Sys\bin\Release\PioneerTech.Consultancy.Sys.pdb</td><td>1</td><td/></row>
 	</table>
@@ -1999,9 +2009,12 @@
 		<row><td>PioneerTech.Consultancy.DAL.dll</td><td/><td/><td>_D4679161_1E91_4325_84FC_2F79260D83BA_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>PioneerTech.Consultancy.DAL.dll1</td><td/><td/><td>_23B08392_DE88_4F46_8A48_FF4EC74AFF38_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>PioneerTech.Consultancy.DAL.dll2</td><td/><td/><td>_21DA12C9_A962_4D79_B7BD_0C986BFAB7C4_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>PioneerTech.Consultancy.DAL.dll3</td><td/><td/><td>_BB8627D4_A8AC_4A73_9F76_D007FDD6A04B_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>PioneerTech.Consultancy.Model.dll</td><td/><td/><td>_C82A60AA_7E49_4810_BC3D_42729EB4FB60_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>PioneerTech.Consultancy.Sys.exe</td><td/><td/><td>_7FF1B2A4_D74D_4D32_A8FD_CE54E6BAE95B_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>PioneerTech.Consultancy.Sys.exe1</td><td/><td/><td>_A1700C25_ECF5_48A5_8FE4_AA84953A5613_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>PioneerTech.Consultancy.Sys.exe2</td><td/><td/><td>_A1B976D4_75A3_471F_8E4F_B4F31B5F91DB_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>PioneerTech.Consultancy.Sys.exe3</td><td/><td/><td>_7CF59829_D692_436A_A149_26F90249EF3E_FILTER</td><td/><td/><td/><td/></row>
 	</table>
 
 	<table name="ISCustomActionReference">
@@ -2623,7 +2636,7 @@
 		<col def="I2">Encoded</col>
 		<col def="S0">Comment</col>
 		<col def="I4">TimeStamp</col>
-		<row><td>COMPANY_NAME</td><td>1033</td><td>PioneerTech</td><td>0</td><td/><td>1143309520</td></row>
+		<row><td>COMPANY_NAME</td><td>1033</td><td>PioneerTech</td><td>0</td><td/><td>1277550867</td></row>
 		<row><td>DN_AlwaysInstall</td><td>1033</td><td>Always Install</td><td>0</td><td/><td>178626753</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_COLOR</td><td>1033</td><td>The color settings of your system are not adequate for running [ProductName].</td><td>0</td><td/><td>178626753</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_OS</td><td>1033</td><td>The operating system is not adequate for running [ProductName].</td><td>0</td><td/><td>178626753</td></row>
@@ -3439,6 +3452,7 @@
 		<row><td>IDS_SHORTCUT_DISPLAY_NAME1</td><td>1033</td><td>LAUNCH~1.EXE|Launch PioneerTech.Consultancy.Sys.exe</td><td>0</td><td/><td>1143334002</td></row>
 		<row><td>IDS_SHORTCUT_DISPLAY_NAME2</td><td>1033</td><td>LAUNCH~1.EXE|Launch PioneerTech.Consultancy.Sys.exe</td><td>0</td><td/><td>1143285232</td></row>
 		<row><td>IDS_SHORTCUT_DISPLAY_NAME3</td><td>1033</td><td>LAUNCH~1.EXE|Launch PioneerTech.Consultancy.Sys.exe</td><td>0</td><td/><td>1143307634</td></row>
+		<row><td>IDS_SHORTCUT_DISPLAY_NAME4</td><td>1033</td><td>LAUNCH~1.EXE|Launch PioneerTech.Consultancy.Sys.exe</td><td>0</td><td/><td>1277514035</td></row>
 		<row><td>IDS_SQLBROWSE_INTRO</td><td>1033</td><td>From the list of servers below, select the database server you would like to target.</td><td>0</td><td/><td>178626753</td></row>
 		<row><td>IDS_SQLBROWSE_INTRO_DB</td><td>1033</td><td>From the list of catalog names below, select the database catalog you would like to target.</td><td>0</td><td/><td>178626753</td></row>
 		<row><td>IDS_SQLBROWSE_INTRO_TEMPLATE</td><td>1033</td><td>[IS_SQLBROWSE_INTRO]</td><td>0</td><td/><td>178626753</td></row>
@@ -3727,7 +3741,7 @@
 		<row><td>IDS__TargetReq_DESC_PROCESSOR</td><td>1033</td><td>The processor is not adequate for running [ProductName].</td><td>0</td><td/><td>178626753</td></row>
 		<row><td>IDS__TargetReq_DESC_RAM</td><td>1033</td><td>The amount of RAM is not adequate for running [ProductName].</td><td>0</td><td/><td>178626753</td></row>
 		<row><td>IDS__TargetReq_DESC_RESOLUTION</td><td>1033</td><td>The screen resolution is not adequate for running [ProductName].</td><td>0</td><td/><td>178626753</td></row>
-		<row><td>ID_STRING1</td><td>1033</td><td>http://www.pioneertechinc.com</td><td>0</td><td/><td>1143313648</td></row>
+		<row><td>ID_STRING1</td><td>1033</td><td>http://www.PioneerTech.com</td><td>0</td><td/><td>1277550867</td></row>
 		<row><td>ID_STRING2</td><td>1033</td><td>PioneerTech.exe</td><td>0</td><td/><td>1143313776</td></row>
 		<row><td>ID_STRING3</td><td>1033</td><td>LAUNCH~1.EXE|Launch PioneerTech.Consultancy.Sys.exe</td><td>0</td><td/><td>1143322096</td></row>
 		<row><td>IIDS_UITEXT_FeatureUninstalled</td><td>1033</td><td>This feature will remain uninstalled.</td><td>0</td><td/><td>178626753</td></row>
@@ -3855,6 +3869,7 @@
 		<row><td>ARPPRODUCTICON.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\setupicon.ico</td><td>0</td></row>
 		<row><td>PioneerTech.Consul_0CBD580139BF4764B23738EEEAFE37C0.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\GenericExe.ico</td><td>0</td></row>
 		<row><td>PioneerTech.Consul_3ECD3E16BA514BEC9542E6998E3E5B05.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\GenericExe.ico</td><td>0</td></row>
+		<row><td>PioneerTech.Consul_962292D017324EB292C7D24C0C8A1343.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\GenericExe.ico</td><td>0</td></row>
 		<row><td>PioneerTech.Consul_F4080FD1C9764140BC41F31402FADF0D.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\GenericExe.ico</td><td>0</td></row>
 	</table>
 
@@ -4431,6 +4446,7 @@ UgBlAGwAZQBhAHMAZQABAEQAZQBmAGEAdQBsAHQAIABDAG8AbgBmAGkAZwB1AHIAYQB0AGkAbwBuAA==
 		<row><td>FileKey2</td><td>PioneerTech.Consultancy.Sys.exe</td><td/><td>pionee_1.set_pioneertechconsultancysystem.setup</td><td>2</td></row>
 		<row><td>PioneerTech.Consultancy.Sys.exe</td><td>PioneerTech.Consultancy.Sys.exe1</td><td/><td>pionee_1.set_pioneertechconsultancysystem.setup</td><td>2</td></row>
 		<row><td>PioneerTech.Consultancy.Sys.exe1</td><td>PioneerTech.Consultancy.Sys.exe2</td><td/><td>pionee_1.set_pioneertechconsultancysystem.setup</td><td>2</td></row>
+		<row><td>PioneerTech.Consultancy.Sys.exe2</td><td>PioneerTech.Consultancy.Sys.exe3</td><td/><td>pionee_1.set_pioneertechconsultancysystem.setup</td><td>2</td></row>
 	</table>
 
 	<table name="RemoveIniFile">
@@ -4519,6 +4535,7 @@ UgBlAGwAZQBhAHMAZQABAEQAZQBmAGEAdQBsAHQAIABDAG8AbgBmAGkAZwB1AHIAYQB0AGkAbwBuAA==
 		<row><td>PioneerTech</td><td>DesktopFolder</td><td>##IDS_SHORTCUT_DISPLAY_NAME1##</td><td>PioneerTech.Consultancy.Sys.exe</td><td>PioneerTechConsultancySystem.se</td><td/><td/><td/><td>PioneerTech.Consul_0CBD580139BF4764B23738EEEAFE37C0.exe</td><td>0</td><td>1</td><td>INSTALLDIR</td><td/><td/><td/><td/><td/><td/><td/></row>
 		<row><td>PioneerTech.Consultancy.Sys.exe</td><td>pionee_1.set_pioneertechconsultancysystem.setup</td><td>##IDS_SHORTCUT_DISPLAY_NAME2##</td><td>PioneerTech.Consultancy.Sys.exe1</td><td>PioneerTechConsultancySystem.se</td><td/><td/><td/><td>PioneerTech.Consul_3ECD3E16BA514BEC9542E6998E3E5B05.exe</td><td>0</td><td>1</td><td>INSTALLDIR</td><td/><td/><td/><td/><td/><td/><td/></row>
 		<row><td>PioneerTech.Consultancy.Sys.exe1</td><td>pionee_1.set_pioneertechconsultancysystem.setup</td><td>##IDS_SHORTCUT_DISPLAY_NAME3##</td><td>PioneerTech.Consultancy.Sys.exe2</td><td>PioneerTechConsultancySystem.se</td><td/><td/><td/><td>PioneerTech.Consul_F4080FD1C9764140BC41F31402FADF0D.exe</td><td>0</td><td>1</td><td>INSTALLDIR</td><td/><td/><td/><td/><td/><td/><td/></row>
+		<row><td>PioneerTech.Consultancy.Sys.exe2</td><td>pionee_1.set_pioneertechconsultancysystem.setup</td><td>##IDS_SHORTCUT_DISPLAY_NAME4##</td><td>PioneerTech.Consultancy.Sys.exe3</td><td>PioneerTechConsultancySystem.se</td><td/><td/><td/><td>PioneerTech.Consul_962292D017324EB292C7D24C0C8A1343.exe</td><td>0</td><td>1</td><td>INSTALLDIR</td><td/><td/><td/><td/><td/><td/><td/></row>
 	</table>
 
 	<table name="Signature">

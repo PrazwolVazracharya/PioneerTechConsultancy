@@ -47,16 +47,6 @@ namespace PioneerTech.Consultancy.Sys
                 EmployeeDataAccessLayer employeeDataAccessobj = new EmployeeDataAccessLayer();
                 int RowAffected_Company = employeeDataAccessobj.CompanySqlConnection(companyDetailsobj);
 
-                /*SqlConnection mysqlconnection = new SqlConnection();
-                mysqlconnection.ConnectionString = "Data Source = DESKTOP-6T65F42;" +
-                             "database = PioneerTechConsultancy_Database;Integrated security = SSPI";
-
-                SqlCommand CompanyDetailCommand = new SqlCommand("INSERT INTO CompanyDetail VALUES(" +
-                                     "'" + EmployerName + "'," + ContactNumber + ",'" + Location + "','" + Website + "'," + EmployeeId + ")", mysqlconnection);
-                mysqlconnection.Open();
-                SqlDataReader DrC = CompanyDetailCommand.ExecuteReader();
-                mysqlconnection.Close();
-                MessageBox.Show("Datas Saved in the Database");*/
             }
 
             catch (Exception exception)
@@ -107,22 +97,6 @@ namespace PioneerTech.Consultancy.Sys
                 EmployeeDataAccessLayer employeeDataAccessobj = new EmployeeDataAccessLayer();
                 int RowsAffected = employeeDataAccessobj.EmployeeSqlConnection(employeeDetailobj);
 
-                /*// Creating database connection
-                   SqlConnection mysqlconnection = new SqlConnection();
-                   mysqlconnection.ConnectionString = "Data Source = DESKTOP-6T65F42;" +
-                                "database = PioneerTechConsultancy_Database;Integrated security = SSPI";
-
-
-                   SqlCommand EmployeeDetailCommand = new SqlCommand("INSERT INTO EmployeeDetail VALUES(" +
-                                "'" + FirstName + "','" + LastName + "','" + EmailId + "'," +
-                                PhoneNumber + "," + AlternatePhoneNumber + ",'" + Address1 + "','" + Address2 +
-                                "','" + HomeCountry + "','" + CurrentCountry + "'," + ZipCode + ")", mysqlconnection);
-                   //Opening Sql Database Connection
-                   mysqlconnection.Open();
-                   SqlDataReader Dr = EmployeeDetailCommand.ExecuteReader();
-
-                   mysqlconnection.Close();
-                   MessageBox.Show("Datas Saved in the Database");*/
             }
             catch (Exception exception)
             {
@@ -151,22 +125,6 @@ namespace PioneerTech.Consultancy.Sys
                 EmployeeDataAccessLayer employeeDataAccessobj = new EmployeeDataAccessLayer();
                 int RowsAffected_projectDetails = employeeDataAccessobj.ProjectSqlConnection(projectDetailsobj);
 
-                /*SqlConnection mysqlconnection = new SqlConnection();
-                mysqlconnection.ConnectionString = "Data Source = DESKTOP-6T65F42;" +
-                             "database = PioneerTechConsultancy_Database;Integrated security = SSPI";
-
-                SqlCommand ProjectDetailCommand = new SqlCommand("INSERT INTO ProjectDetail VALUES(" +
-                                 "'" + ProjectName + "','" + ClientName + "','" + Location + "','" +
-                                 Roles + "'," + EmployeeId + ")", mysqlconnection);*/
-
-                /*MessageBox.Show("INSERT INTO ProjectDetail VALUES(" +
-                                 "'" + ProjectName + "','" + ClientName + "','" + Location + "'," +
-                                 Roles + "," + EmployeeId + ")");*/
-                /*mysqlconnection.Open();
-                SqlDataReader DrP = ProjectDetailCommand.ExecuteReader();
-
-                mysqlconnection.Close();
-                MessageBox.Show("Datas Saved in the Database");*/
             }
             catch (Exception exception)
             {

@@ -9,3 +9,5 @@ C:\Users\Prazwols pc\documents\visual studio 2017\Projects\PioneerTech.Consultan
 C:\Users\Prazwols pc\documents\visual studio 2017\Projects\PioneerTech.Consultancy.Sys\PioneerTech.Consultancy.Sys\obj\Release\PioneerTech.Consultancy.Sys.csproj.GenerateResource.Cache
 C:\Users\Prazwols pc\documents\visual studio 2017\Projects\PioneerTech.Consultancy.Sys\PioneerTech.Consultancy.Sys\obj\Release\PioneerTech.Consultancy.Sys.exe
 C:\Users\Prazwols pc\documents\visual studio 2017\Projects\PioneerTech.Consultancy.Sys\PioneerTech.Consultancy.Sys\obj\Release\PioneerTech.Consultancy.Sys.pdb
+C:\Users\Prazwols pc\documents\visual studio 2017\Projects\PioneerTech.Consultancy.Sys\PioneerTech.Consultancy.Sys\bin\Release\PioneerTech.Consultancy.Model.dll
+C:\Users\Prazwols pc\documents\visual studio 2017\Projects\PioneerTech.Consultancy.Sys\PioneerTech.Consultancy.Sys\bin\Release\PioneerTech.Consultancy.Model.pdb
