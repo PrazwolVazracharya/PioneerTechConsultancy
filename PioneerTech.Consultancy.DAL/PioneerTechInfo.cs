@@ -11,7 +11,7 @@ namespace PioneerTech.Consultancy.DAL
     public class EmployeeDataAccessLayer
     {
 
-        public int EmployeeSqlConnection(EmployeeDetailsModel EmployeeDetailsmodel)
+        public long EmployeeSqlConnection(EmployeeDetailsModel EmployeeDetailsmodel)
         {
             SqlConnection mysqlconnection = new SqlConnection();
             mysqlconnection.ConnectionString = "Data Source = DESKTOP-6T65F42;" +
@@ -23,13 +23,13 @@ namespace PioneerTech.Consultancy.DAL
                                  EmployeeDetailsmodel.PhoneNumber + "," + EmployeeDetailsmodel.AlternatePhoneNumber + ",'" + EmployeeDetailsmodel.Address1 + "','" + EmployeeDetailsmodel.Address2 +
                                  "','" + EmployeeDetailsmodel.HomeCountry + "','" + EmployeeDetailsmodel.CurrentCountry + "'," + EmployeeDetailsmodel.ZipCode + ")", mysqlconnection);
 
-            int EmployeeConnection = EmployeeDetailCommand.ExecuteNonQuery();
+            long EmployeeConnection = EmployeeDetailCommand.ExecuteNonQuery();
             mysqlconnection.Close();
             return EmployeeConnection;
 
         }
 
-        public int ProjectSqlConnection(ProjectDetailsModel ProjectDetailsmodel)
+        public long ProjectSqlConnection(ProjectDetailsModel ProjectDetailsmodel)
         {
             SqlConnection mysqlconnection = new SqlConnection();
             mysqlconnection.ConnectionString = "Data Source = DESKTOP-6T65F42;" +
@@ -39,12 +39,12 @@ namespace PioneerTech.Consultancy.DAL
             SqlCommand ProjectDetailCommand = new SqlCommand("INSERT INTO ProjectDetail VALUES(" +
                              "'" + ProjectDetailsmodel.ProjectName + "','" + ProjectDetailsmodel.ClientName + "','" + ProjectDetailsmodel.Location + "','" +
                              ProjectDetailsmodel.Roles + "'," + ProjectDetailsmodel.EmployeeId + ")", mysqlconnection);
-            int ProjectConnection = ProjectDetailCommand.ExecuteNonQuery();
+            long ProjectConnection = ProjectDetailCommand.ExecuteNonQuery();
             mysqlconnection.Close();
             return ProjectConnection;
         }
 
-        public int CompanySqlConnection(CompanyDetailsModel CompanyDetailsmodel)
+        public long CompanySqlConnection(CompanyDetailsModel CompanyDetailsmodel)
         {
             SqlConnection mysqlconnection = new SqlConnection();
             mysqlconnection.ConnectionString = "Data Source = DESKTOP-6T65F42;" +
@@ -53,12 +53,12 @@ namespace PioneerTech.Consultancy.DAL
             mysqlconnection.Open();
             SqlCommand CompanyDetailCommand = new SqlCommand("INSERT INTO CompanyDetail VALUES(" +
                                  "'" + CompanyDetailsmodel.EmployerName + "'," + CompanyDetailsmodel.ContactNumber + ",'" + CompanyDetailsmodel.Location + "','" + CompanyDetailsmodel.Website + "'," + CompanyDetailsmodel.EmployeeId + ")", mysqlconnection);
-            int CompanyConnection = CompanyDetailCommand.ExecuteNonQuery();
+            long CompanyConnection = CompanyDetailCommand.ExecuteNonQuery();
             mysqlconnection.Close();
             return CompanyConnection;
         }
 
-        public int TechnicalSqlConnection(TechnicalDetailsModel TechnicalDetailsmodel)
+        public long TechnicalSqlConnection(TechnicalDetailsModel TechnicalDetailsmodel)
         {
             SqlConnection mysqlconnection = new SqlConnection();
             mysqlconnection.ConnectionString = "Data Source = DESKTOP-6T65F42;" +
@@ -67,7 +67,7 @@ namespace PioneerTech.Consultancy.DAL
             mysqlconnection.Open();
             SqlCommand TechnicalDetailCommand = new SqlCommand("INSERT INTO TechnicalDetail VALUES(" +
                                  "'" + TechnicalDetailsmodel.UserInterface + "','" + TechnicalDetailsmodel.ProgrammingLanguages + "','" + TechnicalDetailsmodel.Database + "'," + TechnicalDetailsmodel.EmployeeId + ")", mysqlconnection);
-            int TechnicalConnection = TechnicalDetailCommand.ExecuteNonQuery();
+            long TechnicalConnection = TechnicalDetailCommand.ExecuteNonQuery();
             mysqlconnection.Close();
             return TechnicalConnection;
 

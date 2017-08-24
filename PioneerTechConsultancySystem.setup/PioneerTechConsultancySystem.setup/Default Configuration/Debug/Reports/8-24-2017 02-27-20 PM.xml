@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="C:\Program Files (x86)\InstallShield\2016\Support\0409\buildreport.xsl"?>
+<BuildReport ProductName="PioneerTechConsultancySystem.setup" ProductVersion="1.00.0000" Built="8-24-2017 02-27-20 PM" Config="Default Configuration" Media="Debug" Uncompressed="0.00 MB">
+  <Features>
+    <Feature Title="##IDS_FEATURE_DISPLAY_NAME1##">PioneerTechConsultancySystem.se</Feature>
+  </Features>
+  <Components>
+    <Component x64="32">AllOtherFiles</Component>
+    <Component x64="32">IS_ININSTALL_SHORTCUT</Component>
+    <Component x64="32">PioneerTech.Consultancy.DAL.dll</Component>
+    <Component x64="32">PioneerTech.Consultancy.DAL.dll1</Component>
+    <Component x64="32">PioneerTech.Consultancy.DAL.dll2</Component>
+    <Component x64="32" KeyPath="pioneertech.consultancy.dal.">PioneerTech.Consultancy.DAL.dll3</Component>
+    <Component x64="32" KeyPath="pioneertech.consultancy.mode">PioneerTech.Consultancy.Model.dll</Component>
+    <Component x64="32">PioneerTech.Consultancy.Sys.exe</Component>
+    <Component x64="32">PioneerTech.Consultancy.Sys.exe1</Component>
+    <Component x64="32">PioneerTech.Consultancy.Sys.exe2</Component>
+    <Component x64="32" KeyPath="pioneertech.consultancy.sys.">PioneerTech.Consultancy.Sys.exe3</Component>
+  </Components>
+  <Prerequisites />
+  <MergeModules />
+  <DynamicLinks />
+  <Files>
+    <File Destination="{INSTALLDIR} [ProgramFilesFolder]PioneerTech\My Product Name" Component="AllOtherFiles" Modified="8/9/2017 7:07:28 PM" Size="13824" Version="">PioneerTech.Consultancy.DAL.pdb</File>
+    <File Destination="{INSTALLDIR} [ProgramFilesFolder]PioneerTech\My Product Name" Component="AllOtherFiles" Modified="8/9/2017 7:07:24 PM" Size="26112" Version="">PioneerTech.Consultancy.Model.pdb</File>
+    <File Destination="{INSTALLDIR} [ProgramFilesFolder]PioneerTech\My Product Name" Component="AllOtherFiles" Modified="8/4/2017 2:48:12 PM" Size="189" Version="">PioneerTech.Consultancy.Sys.exe.config</File>
+    <File Destination="{INSTALLDIR} [ProgramFilesFolder]PioneerTech\My Product Name" Component="AllOtherFiles" Modified="8/9/2017 7:07:32 PM" Size="36352" Version="">PioneerTech.Consultancy.Sys.pdb</File>
+    <File Destination="{INSTALLDIR} [ProgramFilesFolder]PioneerTech\My Product Name" Component="PioneerTech.Consultancy.DAL.dll3" Modified="8/9/2017 7:07:28 PM" Size="7168" Version="1.0.0.0">PioneerTech.Consultancy.DAL.dll</File>
+    <File Destination="{INSTALLDIR} [ProgramFilesFolder]PioneerTech\My Product Name" Component="PioneerTech.Consultancy.Model.dll" Modified="8/9/2017 7:07:24 PM" Size="8704" Version="1.0.0.0">PioneerTech.Consultancy.Model.dll</File>
+    <File Destination="{INSTALLDIR} [ProgramFilesFolder]PioneerTech\My Product Name" Component="PioneerTech.Consultancy.Sys.exe3" Modified="8/9/2017 7:07:32 PM" Size="32768" Version="1.0.0.0">PioneerTech.Consultancy.Sys.exe</File>
+  </Files>
+</BuildReport>

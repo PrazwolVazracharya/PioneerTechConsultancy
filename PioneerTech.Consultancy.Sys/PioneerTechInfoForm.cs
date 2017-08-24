@@ -45,7 +45,7 @@ namespace PioneerTech.Consultancy.Sys
                     EmployeeId = Convert.ToInt32(CompanyDetailsEmployeeTextBox.Text)
                 };
                 EmployeeDataAccessLayer employeeDataAccessobj = new EmployeeDataAccessLayer();
-                int RowAffected_Company = employeeDataAccessobj.CompanySqlConnection(companyDetailsobj);
+                long RowAffected_Company = employeeDataAccessobj.CompanySqlConnection(companyDetailsobj);
 
             }
 
@@ -94,8 +94,8 @@ namespace PioneerTech.Consultancy.Sys
                     CurrentCountry = currentCountryTextBox.Text,
                     ZipCode = Convert.ToInt32(zipcodeTextBox.Text)
                 };
-                EmployeeDataAccessLayer employeeDataAccessobj = new EmployeeDataAccessLayer();
-                int RowsAffected = employeeDataAccessobj.EmployeeSqlConnection(employeeDetailobj);
+                ServiceReference1.Service1Client client = new ServiceReference1.Service1Client();
+                long RowsAffected = client.SaveEmployeeData(employeeDetailobj);
 
             }
             catch (Exception exception)
@@ -123,7 +123,7 @@ namespace PioneerTech.Consultancy.Sys
                 };
 
                 EmployeeDataAccessLayer employeeDataAccessobj = new EmployeeDataAccessLayer();
-                int RowsAffected_projectDetails = employeeDataAccessobj.ProjectSqlConnection(projectDetailsobj);
+                long RowsAffected_projectDetails = employeeDataAccessobj.ProjectSqlConnection(projectDetailsobj);
 
             }
             catch (Exception exception)
@@ -205,7 +205,7 @@ namespace PioneerTech.Consultancy.Sys
                 };
 
                 EmployeeDataAccessLayer employeeDataAccessobj = new EmployeeDataAccessLayer();
-                int RowsAffected_technicalDetails = employeeDataAccessobj.TechnicalSqlConnection(TechnicalDetailsobj);
+                long RowsAffected_technicalDetails = employeeDataAccessobj.TechnicalSqlConnection(TechnicalDetailsobj);
             }
             catch (Exception exception)
             {
